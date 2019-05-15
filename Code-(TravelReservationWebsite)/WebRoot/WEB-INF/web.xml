@@ -1,0 +1,618 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LoginAction</servlet-name>
+    <servlet-class>com.mas.admin.actions.LoginAction</servlet-class>
+  </servlet>
+  <servlet>
+   <servlet-name>InitServlet</servlet-name>
+   <servlet-class>com.mas.core.util.InitServlet</servlet-class>
+   <init-param>
+    <param-name>config</param-name>
+    <param-value>/WEB-INF/config/system.properties</param-value>
+   </init-param>
+   <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddFlight</servlet-name>
+    <servlet-class>com.mas.admin.actions.AddFlight</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckFnumber</servlet-name>
+    <servlet-class>com.mas.admin.actions.CheckFnumber</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckFname</servlet-name>
+    <servlet-class>com.mas.admin.actions.CheckFname</servlet-class>
+  </servlet>
+ 
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewFlights</servlet-name>
+    <servlet-class>com.mas.admin.actions.ViewFlights</servlet-class>
+  </servlet>
+  
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckHotelName</servlet-name>
+    <servlet-class>com.mas.admin.actions.CheckHotelName</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddNewHotel</servlet-name>
+    <servlet-class>com.mas.admin.actions.AddNewHotel</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewHotels</servlet-name>
+    <servlet-class>com.mas.admin.actions.ViewHotels</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteHotel</servlet-name>
+    <servlet-class>com.mas.admin.actions.DeleteHotel</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewFlyersDetails</servlet-name>
+    <servlet-class>com.mas.admin.actions.ViewFlyersDetails</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteAccount</servlet-name>
+    <servlet-class>com.mas.admin.actions.DeleteAccount</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FlyerTotalPoints</servlet-name>
+    <servlet-class>com.mas.flyer.actions.FlyerTotalPoints</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>AddNewService</servlet-name>
+    <servlet-class>com.mas.admin.actions.AddNewService</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewServices</servlet-name>
+    <servlet-class>com.mas.admin.actions.ViewServices</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteService</servlet-name>
+    <servlet-class>com.mas.admin.actions.DeleteService</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>InsertAvailableDays</servlet-name>
+    <servlet-class>com.mas.admin.actions.InsertAvailableDays</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FlightsStatus</servlet-name>
+    <servlet-class>com.mas.admin.actions.FlightsStatus</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteFlight</servlet-name>
+    <servlet-class>com.mas.admin.actions.DeleteFlight</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetFlightName</servlet-name>
+    <servlet-class>com.mas.admin.actions.GetFlightName</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangePass</servlet-name>
+    <servlet-class>com.mas.admin.actions.ChangePass</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetFareDetails</servlet-name>
+    <servlet-class>com.mas.flyer.actions.GetFareDetails</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ChangeUserPass</servlet-name>
+    <servlet-class>com.mas.flyer.actions.ChangeUserPass</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ConfirmTickets</servlet-name>
+    <servlet-class>com.mas.flyer.actions.ConfirmTickets</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>HowManyPointsINeed</servlet-name>
+    <servlet-class>com.mas.flyer.actions.HowManyPointsINeed</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ShowMyPoints</servlet-name>
+    <servlet-class>com.mas.flyer.actions.ShowMyPoints</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>UpdateUserProfile</servlet-name>
+    <servlet-class>com.mas.flyer.actions.UpdateUserProfile</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PassRecovery</servlet-name>																				
+    <servlet-class>com.mas.flyer.actions.PassRecovery</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CreateNewPass</servlet-name>
+    <servlet-class>com.mas.flyer.actions.CreateNewPass</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>RegisterAction</servlet-name>
+    <servlet-class>com.mas.flyer.actions.RegisterAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>LogoutAction</servlet-name>
+    <servlet-class>com.mas.admin.actions.LogoutAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CheckUseriDAvail</servlet-name>
+    <servlet-class>com.mas.flyer.actions.CheckUseriDAvail</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewLoginDetails</servlet-name>
+    <servlet-class>com.mas.admin.actions.ViewLoginDetails</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetLogDetails</servlet-name>
+    <servlet-class>com.mas.admin.actions.GetLogDetails</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewMails</servlet-name>
+    <servlet-class>com.mas.admin.actions.ViewMails</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PostMailAction</servlet-name>
+    <servlet-class>com.mas.admin.actions.PostMailAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetUserMails</servlet-name>
+    <servlet-class>com.mas.flyer.actions.GetUserMails</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PostUserMailAction</servlet-name>
+    <servlet-class>com.mas.flyer.actions.PostUserMailAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteMail</servlet-name>
+    <servlet-class>com.mas.admin.actions.DeleteMail</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteFlyerMail</servlet-name>
+    <servlet-class>com.mas.flyer.actions.DeleteFlyerMail</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetUserProfile</servlet-name>
+    <servlet-class>com.mas.flyer.actions.GetUserProfile</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetBookingDetails</servlet-name>
+    <servlet-class>com.mas.admin.actions.GetBookingDetails</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ViewServicesToFlyer</servlet-name>
+    <servlet-class>com.mas.flyer.actions.ViewServicesToFlyer</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DepositeAction</servlet-name>
+    <servlet-class>com.mas.admin.actions.DepositeAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetBalanceAction</servlet-name>
+    <servlet-class>com.mas.admin.actions.GetBalanceAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PaymentAction</servlet-name>
+    <servlet-class>com.mas.admin.actions.PaymentAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetBookingDetail</servlet-name>
+    <servlet-class>com.mas.admin.actions.GetBookingDetail</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetHotelDetails</servlet-name>
+    <servlet-class>com.mas.flyer.actions.GetHotelDetails</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>BookHotelAction</servlet-name>
+    <servlet-class>com.mas.flyer.actions.BookHotelAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ConfirmHotel</servlet-name>
+    <servlet-class>com.mas.flyer.actions.ConfirmHotel</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>HotelPaymentAction</servlet-name>
+    <servlet-class>com.mas.admin.actions.HotelPaymentAction</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetHotelBookingDetails</servlet-name>
+    <servlet-class>com.mas.admin.actions.GetHotelBookingDetails</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>GetTransactionDetails</servlet-name>
+    <servlet-class>com.mas.admin.actions.GetTransactionDetails</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DeleteBooking</servlet-name>
+    <servlet-class>com.mas.admin.actions.DeleteBooking</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+   <servlet-name>InitServlet</servlet-name>
+   <url-pattern>/InitServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>LoginAction</servlet-name>
+    <url-pattern>/LoginAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddFlight</servlet-name>
+    <url-pattern>/AddFlight</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckFnumber</servlet-name>
+    <url-pattern>/CheckFnumber</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckFname</servlet-name>
+    <url-pattern>/CheckFname</url-pattern>
+  </servlet-mapping>
+  
+  <servlet-mapping>
+    <servlet-name>ViewFlights</servlet-name>
+    <url-pattern>/ViewFlights</url-pattern>
+  </servlet-mapping>
+   
+  <servlet-mapping>
+    <servlet-name>CheckHotelName</servlet-name>
+    <url-pattern>/CheckHotelName</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddNewHotel</servlet-name>
+    <url-pattern>/AddNewHotel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewHotels</servlet-name>
+    <url-pattern>/ViewHotels</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteHotel</servlet-name>
+    <url-pattern>/DeleteHotel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewFlyersDetails</servlet-name>
+    <url-pattern>/ViewFlyersDetails</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteAccount</servlet-name>
+    <url-pattern>/DeleteAccount</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FlyerTotalPoints</servlet-name>
+    <url-pattern>/FlyerTotalPoints</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AddNewService</servlet-name>
+    <url-pattern>/AddNewService</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewServices</servlet-name>
+    <url-pattern>/ViewServices</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteService</servlet-name>
+    <url-pattern>/DeleteService</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>InsertAvailableDays</servlet-name>
+    <url-pattern>/InsertAvailableDays</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FlightsStatus</servlet-name>
+    <url-pattern>/FlightsStatus</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteFlight</servlet-name>
+    <url-pattern>/DeleteFlight</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetFlightName</servlet-name>
+    <url-pattern>/GetFlightName</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangePass</servlet-name>
+    <url-pattern>/ChangePass</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetFareDetails</servlet-name>
+    <url-pattern>/GetFareDetails</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ChangeUserPass</servlet-name>
+    <url-pattern>/ChangeUserPass</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ConfirmTickets</servlet-name>
+    <url-pattern>/ConfirmTickets</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HowManyPointsINeed</servlet-name>
+    <url-pattern>/HowManyPointsINeed</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ShowMyPoints</servlet-name>
+    <url-pattern>/ShowMyPoints</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UpdateUserProfile</servlet-name>
+    <url-pattern>/UpdateUserProfile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PassRecovery</servlet-name>
+    <url-pattern>/PassRecovery</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CreateNewPass</servlet-name>
+    <url-pattern>/CreateNewPass</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>RegisterAction</servlet-name>
+    <url-pattern>/RegisterAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogoutAction</servlet-name>
+    <url-pattern>/LogoutAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckUseriDAvail</servlet-name>
+    <url-pattern>/CheckUseriDAvail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewLoginDetails</servlet-name>
+    <url-pattern>/ViewLoginDetails</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetLogDetails</servlet-name>
+    <url-pattern>/GetLogDetails</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewMails</servlet-name>
+    <url-pattern>/ViewMails</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PostMailAction</servlet-name>
+    <url-pattern>/PostMailAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetUserMails</servlet-name>
+    <url-pattern>/GetUserMails</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PostUserMailAction</servlet-name>
+    <url-pattern>/PostUserMailAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteMail</servlet-name>
+    <url-pattern>/DeleteMail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteFlyerMail</servlet-name>
+    <url-pattern>/DeleteFlyerMail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetUserProfile</servlet-name>
+    <url-pattern>/GetUserProfile</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetBookingDetails</servlet-name>
+    <url-pattern>/GetBookingDetails</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ViewServicesToFlyer</servlet-name>
+    <url-pattern>/ViewServicesToFlyer</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DepositeAction</servlet-name>
+    <url-pattern>/DepositeAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetBalanceAction</servlet-name>
+    <url-pattern>/GetBalanceAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PaymentAction</servlet-name>
+    <url-pattern>/PaymentAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetBookingDetail</servlet-name>
+    <url-pattern>/GetBookingDetail</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetHotelDetails</servlet-name>
+    <url-pattern>/GetHotelDetails</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>BookHotelAction</servlet-name>
+    <url-pattern>/BookHotelAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ConfirmHotel</servlet-name>
+    <url-pattern>/ConfirmHotel</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>HotelPaymentAction</servlet-name>
+    <url-pattern>/HotelPaymentAction</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetHotelBookingDetails</servlet-name>
+    <url-pattern>/GetHotelBookingDetails</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>GetTransactionDetails</servlet-name>
+    <url-pattern>/GetTransactionDetails</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DeleteBooking</servlet-name>
+    <url-pattern>/DeleteBooking</url-pattern>
+  </servlet-mapping>
+  <context-param>
+   <param-name>copyrights</param-name>
+   <param-value>copyrights @2010</param-value>
+  </context-param>
+  <welcome-file-list>
+    <welcome-file>MasFrame.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
